@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    transition: all 0.4s linear;
+    font-family: "Nunito , sans-serif";
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    background: #333;
+}
+.navbar {
+    background: #fff;
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;left: 0;
+    right: 0;z-index: 1000;
+   width: 80%;
+   margin: 0 auto;
+   border-radius: 10rem;
+   margin-top: 3rem;
+    .navbar-brand {
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: "Nunito";
+        color: #333;
+    }
+    form input {
+        border-bottom: 0.1rem solid #333 !important;
+        outline: none !important;
+        border: none;
+        padding: 1rem 3rem;
+        border-radius: 10rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.7);
+        &:focus {
+            border: none !important;
+            outline: none !important;
+        }
+        &::placeholder {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 1rem;
+        }
+    }
+    form button {
+        width: 100%;
+        padding: 0.7rem 1.3rem;
+        font-size: 2.3rem;
+    }
+}
+.title {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 8rem;
+    color: #fff;
+    font-size: 4rem;
+    margin-top:15rem;
+}
+span {
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    letter-spacing: 3px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+}
+.btn-add {
+    font-size: 2rem;
+    font-family: "Nunito";
+    font-weight: 600;
+    padding: 0.4rem 4rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background: none;
+        outline: none;
+        border: 0.2rem solid #333;
+        color: #333 !important;
+    }
+}
+.btn-2{
+    font-size: 1.3rem;
+    font-family: "Nunito";
+    font-weight: 600;
+    padding: 0.4rem 4rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+    &:hover{
+        background: none;
+        outline: none;
+        border: 0.2rem solid #333;
+        color: #333 !important;
+    }
+}
+textarea {
+    color: #333;
+    font-size: 2rem!important;
+    font-family: "Nunito";
+}
+h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:3rem 0!important;
+}
+#notes .noteCard {
+    border: 0.1rem solid #333;
+    border-radius: 1rem;
+    text-align: center;
+    .card-title {
+        font-weight: 600 !important;
+        letter-spacing: 1px;
+    }
+    .card-text {
+        font-size: 1.8rem;
+        font-family: "Nunito";
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+}
+.dynamic {
+    color: #eee;
+    font-size: 3rem;
+    font-family: "Nunito";
+    text-transform: normal; display: flex;
+    & a{
+        color: #eee!important;
+        font-size: 3rem;
+        font-family: "Nunito";
+        margin: 0 1rem;
+        text-decoration: underline!important;
+    }
+}
+h5 {
+    text-transform: normal;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #333;
+}
+footer {
+    .container  {
+        background-color: #fff!important;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 3rem;
+        border-radius: 20rem;
+        letter-spacing: 2px;
+    }
+}
+
+
+@media(max-width:450px){
+    footer {
+        .container  {
+            background-color: #fff!important;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: #333;
+            letter-spacing: 2px;
+            margin-bottom: 7rem;
+
+        }
+    }
+    .title{
+        font-size: 3rem;
+        margin-top: 20rem;
+    }
+.navbar{
+    padding:1rem;
+    text-align: center!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   & form input{
+        width: 100%!important;
+    }
+    
+}
+.dynamic{
+    font-size: 2rem;
+    display: block!important;
+    text-align: center;
+    border: .2rem solid red;
+    padding: 1rem;
+    & a{
+        font-size: 1.8rem;
+        margin: .5rem;
+        padding: 0.5rem;
+        display: block!important;
+    margin-top: 1rem;
+    }
+}
+    
+}
+@media screen and (max-width:768px) {
+    .navbar {
+        background: #fff;
+        padding: 2rem!important;
+        position: fixed;
+        top: 0;left: 0;
+        right: 0;
+        color: #fff !important;
+        z-index: 1000;
+       width: 100%!important;
+       margin: 0 auto;
+       margin-top: 3rem;
+  &.scrolled{
+      background-color: #333;
+      & .navbar-brand{
+          color: #fff;
+      }
+      form input{
+          border-radius: 10rem;
+      }
+  }
+    
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Notes</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/css/notes.css" />
+  </head>
+  <body>
+    <!-- navigation area starts here -->
+    <nav class="navbar" id="nav1" >
+        <a class="navbar-brand">Maddy Notes</a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search" id="srch"
+            placeholder="Search here"
+            aria-label="Search"
+          />
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </form>
+   
+    </nav>
+    <!-- navigation area ends here -->
+
+    <!-- main container area starts -->
+    <div class="container">
+      <h2 class="title">Maddy Dynamic notes</h2>
+      <span>javascript project</span>
+    </div>
+    <div class="container my-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add Something</h5>
+          <div class="mb-3">
+              
+
+              <textarea class="form-control" id="addTxt" rows="3"></textarea>
+          </div>
+          <a href="#" class="btn btn-add" id="addTask">Add </a>
+        </div>
+      </div>
+      <h1>My Notes</h1>
+      <hr />
+      <div class="row container" id="notes">
+      </div>
+    </div>
+    <!-- main container area ends -->
+    <!-- footer area -->
+<footer>
+    <div class="container">
+        <p>© copyright made by mr_developer with Lots of love and hardwork</p>
+    </div>
+</footer>
+    <script src="/public/css/js/bootstrap.min.js"></script>
+    <script src="/public/css/app.js"></script>
+  </body>
+</html>
